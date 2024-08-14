@@ -1,4 +1,6 @@
+import 'package:ak_store/features/authentication/screens/signup/verify_email.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constants/sizes.dart';
@@ -12,10 +14,10 @@ class AkSignupForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Form(
-      child: Column(
+        child: Column(
       children: [
         // * First Name & Last Name
-    
+
         Row(
           children: [
             Expanded(
@@ -38,39 +40,36 @@ class AkSignupForm extends StatelessWidget {
           ],
         ),
         const SizedBox(height: AkSizes.spaceBtwInputFields),
-    
+
         // * Username
-    
+
         TextFormField(
           expands: false,
           decoration: const InputDecoration(
-              labelText: AkTexts.username,
-              prefixIcon: Icon(Iconsax.user_edit)),
+              labelText: AkTexts.username, prefixIcon: Icon(Iconsax.user_edit)),
         ),
         const SizedBox(height: AkSizes.spaceBtwInputFields),
-    
+
         // * email
-    
+
         TextFormField(
           expands: false,
           decoration: const InputDecoration(
-              labelText: AkTexts.email,
-              prefixIcon: Icon(Iconsax.send_2)),
+              labelText: AkTexts.email, prefixIcon: Icon(Iconsax.send_2)),
         ),
         const SizedBox(height: AkSizes.spaceBtwInputFields),
-    
+
         // * phone number
-    
+
         TextFormField(
           expands: false,
           decoration: const InputDecoration(
-              labelText: AkTexts.phoneNo,
-              prefixIcon: Icon(Iconsax.call)),
+              labelText: AkTexts.phoneNo, prefixIcon: Icon(Iconsax.call)),
         ),
         const SizedBox(height: AkSizes.spaceBtwInputFields),
-    
+
         // * password
-    
+
         TextFormField(
           expands: false,
           decoration: const InputDecoration(
@@ -78,21 +77,20 @@ class AkSignupForm extends StatelessWidget {
               prefixIcon: Icon(Iconsax.password_check)),
         ),
         const SizedBox(height: AkSizes.spaceBtwSections),
-    
+
         //* Terms & Conditions checkbox
-    
+
         const AkTermsConditionsCheckbox(),
         SizedBox(height: AkSizes.spaceBtwSections),
-    
+
         //* Signup Button
-    
+
         SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const VerifyEmailScreen()),
                 child: const Text(AkTexts.createAccount))),
       ],
     ));
   }
 }
-
