@@ -29,11 +29,12 @@ class LoginScreen extends StatelessWidget {
               AkLoginForm(),
               
               // * Divider
-              AkLoginDivider(dark: dark, dividerText: AkTexts.orSignInWith.capitalize!),
-              const SizedBox(width: AkSizes.spaceBtwSections),
+              AkLoginDivider(dividerText: AkTexts.orSignInWith.capitalize!),
+
+              const SizedBox(height: AkSizes.spaceBtwItems),
 
               // * Footer
-              AkSocialButtons(),
+              const AkSocialButtons(),
             ],
           ),
         ),

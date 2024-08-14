@@ -1,4 +1,6 @@
+import 'package:ak_store/features/authentication/screens/signup/signup.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constants/sizes.dart';
@@ -66,8 +68,10 @@ class AkLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
-                    onPressed: () {},
-                    child: Text(AkTexts.createAccount))),
+                    onPressed: () => Get.to(const SignupScreen()),
+                    child: Text(AkTexts.createAccount)
+                ),
+            ),
           ],
         ),
       ),

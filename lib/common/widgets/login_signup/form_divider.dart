@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../../utils/constants/colors.dart';
+import '../../../utils/helpers/helper_functions.dart';
 
 class AkLoginDivider extends StatelessWidget {
   const AkLoginDivider({
     super.key,
-    required this.dark,
     required this.dividerText,
   });
 
-  final bool dark;
   final String dividerText;
 
   @override
   Widget build(BuildContext context) {
+    final dark = AkHelperFunctions.isDarkMode(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
