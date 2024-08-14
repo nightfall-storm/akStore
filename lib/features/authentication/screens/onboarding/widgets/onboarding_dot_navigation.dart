@@ -1,4 +1,4 @@
-import 'package:ak_store/features/authentication/controllers.onboarding/onBoarding_controller.dart';
+import 'package:ak_store/features/authentication/controllers.onboarding/onboarding_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../../../../utils/constants/colors.dart';

@@ -28,7 +28,7 @@ class AkSignupForm extends StatelessWidget {
                     prefixIcon: Icon(Iconsax.user)),
               ),
             ),
-            SizedBox(width: AkSizes.inputFieldRadius),
+            const SizedBox(width: AkSizes.inputFieldRadius),
             Expanded(
               child: TextFormField(
                 expands: false,
@@ -81,7 +81,7 @@ class AkSignupForm extends StatelessWidget {
         //* Terms & Conditions checkbox
 
         const AkTermsConditionsCheckbox(),
-        SizedBox(height: AkSizes.spaceBtwSections),
+        const SizedBox(height: AkSizes.spaceBtwSections),
 
         //* Signup Button
 

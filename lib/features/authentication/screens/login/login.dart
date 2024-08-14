@@ -1,6 +1,5 @@
 import 'package:ak_store/common/styles/spacing_style.dart';
 import 'package:ak_store/utils/constants/text_strings.dart';
-import 'package:ak_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,7 +14,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = AkHelperFunctions.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -23,10 +21,10 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             children: [
               // * Logo, Title & SubTitle
-              AkLoginHeader(dark: dark),
+              const AkLoginHeader(),
 
               // * Form
-              AkLoginForm(),
+              const AkLoginForm(),
               
               // * Divider
               AkLoginDivider(dividerText: AkTexts.orSignInWith.capitalize!),

@@ -1,3 +1,4 @@
+import 'package:ak_store/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:ak_store/features/authentication/screens/signup/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -22,7 +23,7 @@ class AkLoginForm extends StatelessWidget {
           children: [
             // * Email
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   prefixIcon: Icon(Iconsax.direct_right),
                   labelText: AkTexts.email),
             ),
@@ -30,7 +31,7 @@ class AkLoginForm extends StatelessWidget {
     
             // * Password
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   prefixIcon: Icon(Iconsax.password_check),
                   labelText: AkTexts.password,
                   suffixIcon: Icon(Iconsax.eye_slash)),
@@ -49,8 +50,8 @@ class AkLoginForm extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                    onPressed: () {},
-                    child: Text(AkTexts.forgetPassword)),
+                    onPressed: () => Get.to(() => const ForgetPassword()),
+                    child: const Text(AkTexts.forgetPassword)),
                 // * Forgot Password
               ],
             ),
@@ -60,7 +61,7 @@ class AkLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: Text(AkTexts.signIn))),
+                    onPressed: () {}, child: const Text(AkTexts.signIn))),
     
             const SizedBox(height: AkSizes.spaceBtwItems),
     
@@ -69,7 +70,7 @@ class AkLoginForm extends StatelessWidget {
                 width: double.infinity,
                 child: OutlinedButton(
                     onPressed: () => Get.to(const SignupScreen()),
-                    child: Text(AkTexts.createAccount)
+                    child: const Text(AkTexts.createAccount)
                 ),
             ),
           ],

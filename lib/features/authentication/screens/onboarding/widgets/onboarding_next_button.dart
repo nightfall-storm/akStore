@@ -1,4 +1,4 @@
-import 'package:ak_store/features/authentication/controllers.onboarding/onBoarding_controller.dart';
+import 'package:ak_store/features/authentication/controllers.onboarding/onboarding_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -7,8 +7,8 @@ import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/device/device_utility.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
 
-class onboardingNextButton extends StatelessWidget {
-  const onboardingNextButton({
+class OnBoardingNextButton extends StatelessWidget {
+  const OnBoardingNextButton({
     super.key,
   });
 
