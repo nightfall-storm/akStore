@@ -1,5 +1,6 @@
 import 'package:ak_store/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:ak_store/features/authentication/screens/signup/signup.dart';
+import 'package:ak_store/navigation_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -61,7 +62,7 @@ class AkLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: const Text(AkTexts.signIn))),
+                    onPressed: () => Get.to(() => const NavigationMenu()), child: const Text(AkTexts.signIn))),
     
             const SizedBox(height: AkSizes.spaceBtwItems),
     

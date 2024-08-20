@@ -1,4 +1,4 @@
-import 'package:ak_store/features/authentication/controllers.onboarding/onboarding_controller.dart';
+import 'package:ak_store/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:ak_store/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
